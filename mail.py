@@ -12,7 +12,7 @@ gmail."""
 import sys, csv, os
 
 
-#Class that is used to define each row in the csv file
+#Persons defines each row in the csv file as a set of variables
 
 class Persons: 
   def __init__(self, first_name, last_name, domain):
@@ -46,11 +46,6 @@ def csvwrite(email_list):
       mywriter.writerow(item)
     print "E-mail addresses outputed successfully. Check email_dump.csv."
 
- 
-'''Please note that possible_emails and complile_emails are functions
-pulled from https://github.com/Nateliason/Find-Email-Python repository 
-by Nate Liason'''
-
 
 #Called within "complile_emails" and returns a string in email format
 
@@ -59,7 +54,6 @@ def possible_emails(possible_name_combos, at_domain):
 
 
 # All of the basic possible email combinations. 
-
 
 def complile_emails(person):
   
@@ -97,6 +91,7 @@ def complile_emails(person):
 
 
 # Defines person object and passes object to complile_emails function
+
 def main(people):
     
   email_list = []
