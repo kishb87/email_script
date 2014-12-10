@@ -1,29 +1,5 @@
-"""
-Mail.py is a script that reads a csv file categorized 
-with first name, last name, and website domain. 
-
-It then provides different email possiblities based on that information 
-and feeds the different email possibilities to a server that determines
-if the email address is real or not. All valid email addresses are outputed to 
-a seperate csv file called email_dump.csv.
-
-The purpose of this script is to find someone's email address. 
-Please use it responsibly.
-
-To execute the program. Run it form terminal. Make sure people.csv is in the same directory as 
-mail.py.
-
-Please note: 
-
-pulled from https://github.compossible_emails and complile_emails are functions
-/Nateliason/Find-Email-Python repository 
-by Nate Liason
-
-request_server uses a server application created by Graham Hunter.
-To learn more visit: 
-http://marketergraham.com/turning-data-into-leads/
-
-"""
+"""mail.py is a script that automates the process of finding a persons email address. 
+Please see the readme.txt for additional information"""
 
 import sys, csv, os, requests, re, time
 
