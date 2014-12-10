@@ -1,7 +1,10 @@
 """
 SUMMARY
 
-Mail.py is a script that reads a csv file categorized 
+The purpose of mail.py script is to find someone's email address. 
+Please use it responsibly.
+
+First, it reads a csv file categorized 
 with first name, last name, and website domain. 
 
 It then provides different email possibilities based on that information 
@@ -9,8 +12,7 @@ and feeds the different email possibilities to a server that determines
 if the email address is real or not. All valid email addresses are outputted to 
 a separate csv file called email_dump.csv.
 
-The purpose of this script is to find someone's email address. 
-Please use it responsibly.
+
 
 INSTRUCTIONS
 
