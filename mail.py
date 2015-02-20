@@ -167,6 +167,13 @@ class Write():
         mywriter.writerow(item)
       print "E-mail addresses outputed successfully. Check email_dump.csv."
 
+  def csv_write_possible(self, email_list):
+      csv_out = open("email_dump.csv", "wb")
+      mywriter = csv.writer(csv_out)
+      for item in email_list:
+        mywriter.writerow(item)
+      print "All possible E-mail addresses outputed successfully. Check email_dump.csv."
+
 
 #code execution
 create_file = Aggregate()
@@ -179,6 +186,16 @@ match_list = find_email.match(server_list)
 email_list = find_email.validate_email(match_list)
 write_email = Write()
 write_email.csv_write(email_list)
+
+
+#Execution for screening through Rapportive
+"""
+create_file = Aggregate()
+people_list = create_file.start()
+email_list = create_file.compile_list(people_list)
+possible_list = Write()
+possible_list.csv_write_possible(email_list)
+"""
 
 
 
